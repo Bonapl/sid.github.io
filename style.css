@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+header .search input{
+    background-color: #374151;
+   width: 210px;
+   height: 34px;
+   border: none;
+   border-radius: 44px;
+   margin-left: 8px;
+   padding: 10px;
+   color: #fff;
+}
+header .search button{
+    width: 70px;
+    height: 34px;
+    border:none;
+    border-radius: 44px;
+    background-color: #F0924F;
+}
+header .search button:hover{
+    cursor: pointer;
+}
+header .search button:active{
+    cursor: pointer;
+    transform: scale(0.96);
+    box-shadow: 3px 4px 10px rgba(0,0,0,0.2);
+}
+header .account{
+    text-align: center;
+    margin-right: 18px;
+    margin-top: 18px;
+}
+header .account i{
+    padding: 8px 8px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+}
+header .account i:hover{
+    cursor: pointer;
+}
+header .account p{
+    font-size: 12px;
+}
+.sidebar .btn i{
+    font-size: 20px;
+    color: #5b5b5b;
+}
+.sidebar .btn i:hover{
+    color: #F0924F;
+}
+.offcanvas-header{
+    background-color: #ededed;
+    width: 148px;
+}
+.offcanvas-body{
+    background-color: #ededed;
+    width: 148px;
+}
+.offcanvas-body ul{
+    list-style: none;
+}
+.offcanvas-body ul .home{
+    background-color: #F0924F;
+}
+.offcanvas-body ul li{
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 14px;
+    width: 64px;
+    height: 64px;
+}
+.offcanvas-body ul li i{
+    font-size: 22px;
+}
+.offcanvas-body ul li a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+/*swicth-btn*/
+.toggle-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .toggle-slot {
+    font-size: 10px;
+    position: relative;
+    height: 2.5em;
+    width: 4em;
+    border: 0px solid transparent;
+    border-radius: 10em;
+    background-color: rgb(210, 210, 210);
+    transition: background-color 250ms;
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot {
+    background-color: #374151;
+  }
+  
+  .toggle-button {
+    transform: translate(0.3em, 0.25em);
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-color: #ffeccf;
+    box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+    transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+    background-color: #485367;
+    box-shadow: inset 0px 0px 0px 0.75em white;
+    transform: translate(1.65em, 0.25em);
+  }
+  
+  .sun-icon {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    color: #ffbb52;
+  }
+  
+  .sun-icon-wrapper {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    opacity: 1;
+    transform: translate(2em, 2em) rotate(15deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
+    opacity: 0;
+    transform: translate(3em, 2em) rotate(0deg);
+  }
+  
+  .moon-icon {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    color: white;
+  }
+  
+  .moon-icon-wrapper {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    opacity: 0;
+    transform: translate(11em, 2em) rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
+    opacity: 1;
+    transform: translate(2em, 2em) rotate(-15deg);
+  }
+  /*DarkMode*/
+  .dark-mode{
+    background-color: #000;
+    color: #fff;
+  }
+
+  /*Container-md*/
+  .container-md{
+    background-color: rgb(228, 228, 228);
+    height: 500px;
+    width: 100%;
+    border-radius: 24px;
+    -moz-outline-radius: 14px;
+  }
